@@ -1,1 +1,37 @@
-<!-- Write your code here! -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML adventure</title>
+  </head>
+  <body>
+    <h1>My HTML adventure</h1>
+    <p>
+      This is a <strong>new paragraph</strong> added using DOM manipulation!
+      <em>Exciting!</em> And here's a link to <a href="https://www.google.com/">Google</a>.
+    </p>
+    <table>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+      </tr>
+      <tr>
+        <td>Row 1, Column 1</td>
+        <td>Row 1, Column 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Column 1</td>
+        <td>Row 2, Column 2</td>
+      </tr>
+    </table>
+    <div id="myDiv"></div>
+    <script>
+      // Create a DOM node using HTML
+      var newNode = document.createElement('p');
+      newNode.innerHTML = 'This is a new paragraph added using DOM manipulation!';
+
+      // Append the node to the body of the HTML document
+      var body = document.getElementsByTagName('body')[0];
+      body.appendChild(newNode);
+    </script>
+  </body>
+</html>
